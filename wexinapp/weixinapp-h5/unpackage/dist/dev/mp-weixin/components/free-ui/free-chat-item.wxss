@@ -1,0 +1,12 @@
+
+.chat-left-icon{
+	left: 80rpx;
+	/* top: 60rpx; */
+}
+.chat-right-icon{
+	right: 80rpx;
+	/* top: 60rpx; */
+}
+.chat-animate{
+}
+

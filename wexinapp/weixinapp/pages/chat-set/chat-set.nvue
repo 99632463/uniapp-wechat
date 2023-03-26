@@ -1,0 +1,148 @@
+<template>
+	<view style="background-color: #ededed;">
+		<freeNavBar title='聊天信息' showBack :showRight='false' />
+		<view class="flex flex-wrap py-3 bg-white">
+			<view class="flex flex-column align-center justify-center mb-2" style="width: 150rpx;">
+				<freeAvatar src="/static/video/demo.jpg" size="110"></freeAvatar>
+				<text class="font text-muted mt-1">昵称</text>
+			</view>
+			<view class="flex flex-column align-center justify-center mb-2" style="width: 150rpx;">
+				<view class="flex align-center justify-center border" hover-class="bg-light" style="width: 120rpx; height: 120rpx;">
+					<text class="text-light-muted" style="font-size: 100rpx;">+</text>
+				</view>
+			</view>
+		</view>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="群聊名称" 
+			showRight
+			:showLeftIcon='false'
+		>
+			<text slot='right' class="font text-muted">我是群聊名称</text>
+		</freeListItem>
+		<freeListItem
+			title="群二维码" 
+			showRight
+			:showLeftIcon='false'
+		>
+			<text slot='right' class="iconfont font-md text-light-muted">&#xe647;</text>
+		</freeListItem>
+		<freeListItem
+			title="群公告" 
+			showRight
+			:showLeftIcon='false'
+		>
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="查找聊天记录" 
+			showRight
+			:showLeftIcon='false'
+		>
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="消息免打扰" 
+			showRight
+			:showLeftIcon='false'
+			:showRightIcon='false'
+		>
+			<switch checked="true" slot='right' color="#08c060" />
+		</freeListItem>
+		<freeListItem
+			title="置顶聊天" 
+			showRight
+			:showLeftIcon='false'
+			:showRightIcon='false'
+		>
+			<switch checked="true" slot='right' color="#08c060" />
+		</freeListItem>
+		<freeListItem
+			title="强提醒" 
+			showRight
+			:showLeftIcon='false'
+			:showRightIcon='false'
+		>
+			<switch checked="true" slot='right' color="#08c060" />
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="我在本群里的昵称" 
+			showRight
+			:showLeftIcon='false'
+		>
+			<text slot='right' class="font text-muted">昵称</text>
+		</freeListItem>
+		<freeListItem
+			title="显示群成员名称" 
+			showRight
+			:showLeftIcon='false'
+			:showRightIcon='false'
+		>
+			<switch checked="true" slot='right' color="#08c060" />
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="清空聊天记录" 
+			showRight
+			:showLeftIcon='false'
+		>
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<freeListItem
+			title="投诉" 
+			showRight
+			:showLeftIcon='false'
+		>
+		</freeListItem>
+		
+		<freeDivider></freeDivider>
+		
+		<view class="py-3 flex align-center justify-center bg-white" hover-class="bg-light">
+			<text class="font-md text-danger">删除并退出</text>
+		</view>
+		
+		<view style="height: 200rpx;"
+		</view>
+	</view>
+</template>
+
+<script>
+	import freeNavBar from '@/components/free-ui/free-nav-bar.vue'
+	import freeAvatar from '@/components/free-ui/free-avatar.vue'
+	import freeDivider from '@/components/free-ui/free-divider.vue'
+	import freeListItem from '@/components/free-ui/free-list-item.vue'
+	
+	export default {
+		components:{
+			freeNavBar,
+			freeAvatar,
+			freeDivider,
+			freeListItem
+		},
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>

@@ -1,0 +1,95 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/common/login/login"
+		},{
+			"path": "pages/tabbar/index/index",
+			"style": {}
+		},{
+			"path" : "pages/tabbar/mail/mail",
+			"style" : {}
+	   },{
+			"path" : "pages/tabbar/find/find",
+			"style" : {}
+		},{
+			"path" : "pages/tabbar/my/my",
+			"style" : {}
+	   },{
+		   "path" : "pages/chat/chat/chat",
+		   "style" : {}
+		},{
+			"path" : "pages/chat/video/video"
+	   },{
+			"path" : "pages/chat-set/chat-set"
+	   },{
+			"path" : "pages/mail/user-base/user-base"
+      },{
+         "path" : "pages/mail/user-remark-tag/user-remark-tag"
+	   },{
+         "path" : "pages/mail/user-tag-set/user-tag-set"
+	   },{
+         "path" : "pages/mail/user-moments-auth/user-moments-auth"
+	   },{
+			"path" : "pages/mail/send-card/send-card"
+	   },{
+			"path" : "pages/mail/mail/mail"
+	   },{
+			"path" : "pages/mail/user-report/user-report"
+	   },{
+			"path" : "pages/find/moments/moments"
+      },{
+			"path" : "pages/my/userinfo/userinfo"
+      },{
+			"path" : "pages/my/code/code"
+      },{
+			"path" : "pages/my/fava/fava"
+      },{
+			"path" : "pages/common/search/search"
+      },{
+			"path" : "pages/find/add-moments/add-moments"
+      }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "仿微信",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "white",
+		"app-plus":{
+			"titleNView":false,
+			"scrollIndicator":"none"
+		}
+	},
+	"uniIdRouter": {},
+	"tabBar":{
+		"color":"#000000",
+		"selectedColor":"#08C261",
+		"borderStyle":"black",
+		"backgroundColor":"#F7F7F7",
+		"list":[
+			{
+				"iconPath":"static/tabbar/index.png",
+				"selectedIconPath":"static/tabbar/index-select.png",
+				"pagePath":"pages/tabbar/index/index",
+				"text":"首页"
+			},
+			{
+				"iconPath":"static/tabbar/mail.png",
+				"selectedIconPath":"static/tabbar/mail-select.png",
+				"pagePath":"pages/tabbar/mail/mail",
+				"text":"通讯录"
+			},
+			{
+				"iconPath":"static/tabbar/find.png",
+				"selectedIconPath":"static/tabbar/find-select.png",
+				"pagePath":"pages/tabbar/find/find",
+				"text":"发现"
+			},
+			{
+				"iconPath":"static/tabbar/my.png",
+				"selectedIconPath":"static/tabbar/my-select.png",
+				"pagePath":"pages/tabbar/my/my",
+				"text":"我的"
+			}
+		]
+	}
+}

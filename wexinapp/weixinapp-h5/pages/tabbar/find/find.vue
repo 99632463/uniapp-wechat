@@ -1,0 +1,97 @@
+<template>
+	<view class="page">
+		<freeNavBar title='发现'></freeNavBar>
+		
+		<freeListItem
+			title="朋友圈" 
+			showRight
+			@click="openMoment"
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+			<div slot='right' class="position-relative">
+				<freeAvatar src='/static/images/mail/friend.png' size="55"/>
+				<div 
+					class="rounded-circle bg-danger position-absolute" 
+					style="top:0;right:0; width: 20rpx; height: 20rpx"
+				>
+				</div>
+			</div>
+		</freeListItem>
+		
+		<freeDivider />
+		
+		<freeListItem
+			title="扫一扫" 
+			showRight
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+		</freeListItem>
+		<freeListItem
+			title="摇一摇" 
+			showRight
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+		</freeListItem>
+		
+		<freeDivider />
+		
+		<freeListItem
+			title="朋友圈" 
+			showRight
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+		</freeListItem>
+		<freeListItem
+			title="朋友圈" 
+			showRight
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+		</freeListItem>
+		
+		<freeDivider />
+		
+		<freeListItem
+			title="朋友圈" 
+			showRight
+		>
+			<text class="iconfont font-lg py-1" slot='icon'>&#xe667;</text>
+		</freeListItem>
+	</view>
+</template>
+
+<script>
+	import freeNavBar from '@/components/free-ui/free-nav-bar.vue'
+	import freeListItem from '@/components/free-ui/free-list-item.vue'
+	import freeAvatar from '@/components/free-ui/free-avatar.vue'
+	import freeDivider from '@/components/free-ui/free-divider.vue'
+	import auth from '@/common/mixin/auth.js'
+	
+	export default {
+		mixins: [auth],
+		components: {
+			freeNavBar,
+			freeListItem,
+			freeAvatar,
+			freeDivider
+		},
+		data() {
+			return {
+				
+			}
+		},
+		onLoad() {
+
+		},
+		methods: {
+			openMoment(){
+				uni.navigateTo({
+					url: '/pages/find/moments/moments',
+				});
+			}
+		}
+	}
+</script>
+
+<style>
+	
+</style>
